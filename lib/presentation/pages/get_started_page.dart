@@ -38,7 +38,9 @@ class GetStartedPage extends StatelessWidget {
               onPressed: () {
                 Navigator.of(
                   context,
-                ).push(MaterialPageRoute(builder: (context) => SignUpPage()));
+                ).pushReplacement(
+                  MaterialPageRoute(builder: (context) => SignUpPage()),
+                );
               },
             ),
           ],
