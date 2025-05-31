@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nft_market/presentation/pages/discover_page.dart';
 import 'package:nft_market/presentation/pages/sign_in_page.dart';
 import 'package:nft_market/presentation/widgets/button_widget.dart';
 import 'package:nft_market/presentation/widgets/input_widget.dart';
@@ -70,7 +71,11 @@ class SignUpPage extends StatelessWidget {
                     return ButtonWidget(
                       text: 'Continue',
                       onPressed: () {
-                        //
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(
+                            builder: (context) => DiscoverPage(),
+                          ),
+                        );
                       },
                       isFullWidth: true,
                     );
