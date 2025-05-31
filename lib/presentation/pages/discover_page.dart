@@ -186,9 +186,9 @@ class DiscoverPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset(
-                    'assets/svgs/icon_${element.value.toLowerCase()}.svg',
-                  ),
+                  // SvgPicture.asset(
+                  //   'assets/svgs/icon_${element.value.toLowerCase()}.svg',
+                  // ),
                   Gap(6),
                   Text(
                     element.value,
